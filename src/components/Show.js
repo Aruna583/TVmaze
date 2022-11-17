@@ -26,7 +26,7 @@ const Show = ({ data }) => {
                   <p className="text-lg m-3 font-bold  text-left text-white ">
                     {item.show.name}
                   </p>
-                  <div className="text-white text-left  font-bold font-normal m-2">{item.show.summary}</div>
+                  <div className="text-white text-base text-left  font-bold font-normal m-2">{item.show.summary}</div>
 
                 </div>
               </div>
