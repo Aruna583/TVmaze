@@ -39,6 +39,7 @@ const Tvmaze = () => {
   // } else if (values === "people") {
   //   holder = "Search by Actor name";
   // }
+console.log(searchInput)
 
   return (
     <div className="text-center">
@@ -80,9 +81,7 @@ const Tvmaze = () => {
             </span>
           </div>
         </div>
-
-        <div>
-          {values && (
+        {values && (
             <div className="bg-gray-500 py-2">
               <input
                 className="h-10 shadow-xl border-3 border-solid border-black rounded"
@@ -92,6 +91,9 @@ const Tvmaze = () => {
               />
             </div>
           )}
+
+        <div>
+         
         </div>
       </form>
       
