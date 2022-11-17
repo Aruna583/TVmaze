@@ -42,7 +42,7 @@ const Tvmaze = () => {
 
   return (
     <div className="text-center">
-      <div className="bg-gray-500 h-30">
+      <div className="bg-gray-500  to-indigo-400 h-30">
         <h1 className="text-3xl font-bold text-white py-2">Tvmaze</h1>
       </div>
       <form onSubmit={onSubmitForm}>
@@ -85,7 +85,7 @@ const Tvmaze = () => {
           {values && (
             <div className="bg-gray-500 py-2">
               <input
-                className="h-10 border-3 border-solid border-black rounded"
+                className="h-10 shadow-xl border-3 border-solid border-black rounded"
                 type="search"
                 placeholder={`Search by ${values}`}
                 onChange={(e) => setSearchInput(e.target.value)}
@@ -94,7 +94,7 @@ const Tvmaze = () => {
           )}
         </div>
       </form>
-
+      
       {values === "shows" && dataValues.length > 0 && (
         <Show data={dataValues} />
       )}
@@ -102,6 +102,8 @@ const Tvmaze = () => {
       {values === "people" && dataValues.length > 0 && (
         <Person data={dataValues} />
       )}
+     
+
     </div>
   );
 };

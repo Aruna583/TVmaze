@@ -5,7 +5,7 @@ import Tvmaze from './components/Tvmaze'
 
 function App() {
   return (
-    <div className="bg-green-100 h-screen">
+    <div className="bg-slate-100 min-h-screen">
      <Tvmaze/>
      
      

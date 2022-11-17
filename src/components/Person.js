@@ -11,21 +11,32 @@ const Person = ({ data }) => {
           item.person.image && (
             <div
               key={item.person.id}
-              className="px-2 bg-red flex-wrap text-center"
+              className="px-2 py-2 flex-wrap rounded-full justify-items-center"
             >
-              <div className="px-2 text-center bg-red-300  flex flex-wrap  h-80 w-60 m-2 rounded">
+              <div className="bg-[#5E17F4] rounded shadow-lg max-w-sm overflow-scroll h-80 m-2 w-80 max-width-sm">
                 <div className="flex flex-col">
-                  <p className="text-lg font-bold text-red-500">
-                    {item.person.name}
-                  </p>
+                 
                   <a href={item.person.url} target="blank">
                     
                     <img
-                      className="h-60 w-60 "
+                      className="text-center h-60 w-full rounded"
                       src={item.person.image.medium}
                       alt={item.person.name}
                     />
                   </a>
+                  <p className="text-lg px-2 py-2 text-left font-bold text-white">
+                    {item.person.name}
+                  </p>
+                  {/* <p className="text-lg px-2 py-2 text-left font-bold text-white">
+                    Birthday: {item.person.birthday}
+                  </p> */}
+                  <p className="text-lg px-2 py-2 text-left font-bold text-white">
+                    Gender: {item.person.gender}
+                  </p>
+                  <p className="text-sm px-2 py-2 text-left font-bold text-white">
+                    url: <a href={item.person.url} target="blank">{item.person.url}</a>
+                  </p>
+                 
                 </div>
               </div>
             </div>
